@@ -1,178 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Gaming Elite</title>
+<title>Mon Snap</title>
+
+<!-- POLICE -->
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
 
 <style>
-* {
+body {
     margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial;
-}
-
-/* VIDEO BACKGROUND */
-video {
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    z-index:-1;
-}
-
-/* OVERLAY */
-.overlay {
-    background: rgba(0,0,0,0.7);
-    min-height:100vh;
-}
-
-/* NAVBAR */
-.nav {
-    display:flex;
-    justify-content:space-between;
-    padding:20px 50px;
-}
-
-.logo {
-    color:#00ffe0;
-    font-size:25px;
-    font-weight:bold;
-    text-shadow:0 0 10px #00ffe0;
-}
-
-.menu a {
-    color:white;
-    margin-left:25px;
-    text-decoration:none;
-    transition:0.3s;
-}
-
-.menu a:hover {
-    color:#00ffe0;
-}
-
-/* HERO */
-.hero {
-    text-align:center;
-    margin-top:100px;
-}
-
-.hero h1 {
-    font-size:70px;
-    color:#00ffe0;
-    text-shadow:0 0 30px #00ffe0;
-    animation: glow 2s infinite alternate;
-}
-
-@keyframes glow {
-    from { text-shadow:0 0 10px #00ffe0; }
-    to { text-shadow:0 0 40px #00ffe0; }
-}
-
-.hero p {
-    margin-top:20px;
-    font-size:22px;
-}
-
-/* BUTTON */
-.btn {
-    margin-top:30px;
-    padding:15px 40px;
-    font-size:18px;
-    border:none;
-    border-radius:30px;
-    background:linear-gradient(45deg,#00ffe0,#00aaff);
-    cursor:pointer;
-    transition:0.3s;
-}
-
-.btn:hover {
-    transform:scale(1.1);
-    box-shadow:0 0 20px #00ffe0;
-}
-
-/* CARDS */
-.games {
+    height:100vh;
     display:flex;
     justify-content:center;
-    flex-wrap:wrap;
-    gap:30px;
-    padding:80px;
+    align-items:center;
+    background: linear-gradient(135deg, #0f172a, #020617);
+    font-family: 'Orbitron', sans-serif;
 }
 
-.card {
-    width:260px;
-    background:rgba(0,0,0,0.8);
-    border-radius:15px;
-    overflow:hidden;
-    transition:0.4s;
-    backdrop-filter: blur(10px);
+/* BOUTON SNAP */
+.snap-btn {
+    padding:20px 50px;
+    font-size:22px;
+    color:black;
+    background:#FFFC00;
+    border:none;
+    border-radius:50px;
+    cursor:pointer;
+    font-weight:bold;
+    box-shadow:0 0 20px #FFFC00;
+    transition:0.3s;
+    letter-spacing:2px;
 }
 
-.card img {
-    width:100%;
+/* HOVER */
+.snap-btn:hover {
+    transform:scale(1.1);
+    box-shadow:0 0 40px #FFFC00;
 }
 
-.card h3 {
-    padding:15px;
+/* ANIMATION */
+.snap-btn {
+    animation:pulse 1.5s infinite;
 }
 
-.card:hover {
-    transform:translateY(-15px) scale(1.05);
-    box-shadow:0 0 25px #00ffe0;
+@keyframes pulse {
+    0% { box-shadow:0 0 10px #FFFC00; }
+    50% { box-shadow:0 0 40px #FFFC00; }
+    100% { box-shadow:0 0 10px #FFFC00; }
 }
 </style>
 </head>
 
 <body>
 
-<!-- VIDEO BACKGROUND -->
-<video autoplay muted loop>
-<source src="https://cdn.coverr.co/videos/coverr-gaming-room-1605/1080p.mp4" type="video/mp4">
-</video>
+<!-- 🎵 MUSIQUE -->
+<audio autoplay loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+</audio>
 
-<div class="overlay">
-
-<!-- NAVBAR -->
-<div class="nav">
-    <div class="logo">⚡ ELITE GAMING</div>
-    <div class="menu">
-        <a href="#">Home</a>
-        <a href="#">Games</a>
-        <a href="#">Contact</a>
-    </div>
-</div>
-
-<!-- HERO -->
-<div class="hero">
-    <h1>ENTER THE GAME</h1>
-    <p>Le futur du gaming commence ici</p>
-    <button class="btn">PLAY NOW</button>
-</div>
-
-<!-- GAMES -->
-<div class="games">
-
-    <div class="card">
-        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e">
-        <h3>Cyber Battle</h3>
-    </div>
-
-    <div class="card">
-        <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420">
-        <h3>War Arena</h3>
-    </div>
-
-    <div class="card">
-        <img src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8">
-        <h3>RPG World</h3>
-    </div>
-
-</div>
-
-</div>
+<a href="https://snapchat.com/add/rida31100" target="_blank">
+    <button class="snap-btn">👻 AJOUTE MOI SUR SNAP</button>
+</a>
 
 </body>
 </html>
