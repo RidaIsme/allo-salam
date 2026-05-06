@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Mon Snap</title>
+<title>Snap Style</title>
 
-<!-- POLICE -->
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+<!-- POLICE MODERNE -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
 
 <style>
 body {
@@ -13,52 +13,47 @@ body {
     display:flex;
     justify-content:center;
     align-items:center;
-    background: linear-gradient(135deg, #0f172a, #020617);
-    font-family: 'Orbitron', sans-serif;
+    font-family:'Poppins', sans-serif;
+    background: linear-gradient(135deg, #FFFC00, #ffe600);
+    overflow:hidden;
 }
 
-/* BOUTON SNAP */
+/* BULLES */
+.bubble {
+    position:absolute;
+    border-radius:50%;
+    background: rgba(255,255,255,0.2);
+}
+
+/* BOUTON */
 .snap-btn {
-    padding:20px 50px;
-    font-size:22px;
+    padding:25px 60px;
+    font-size:24px;
     color:black;
-    background:#FFFC00;
+    background:white;
     border:none;
     border-radius:50px;
     cursor:pointer;
-    font-weight:bold;
-    box-shadow:0 0 20px #FFFC00;
+    font-weight:800;
+    box-shadow:0 0 30px white;
     transition:0.3s;
-    letter-spacing:2px;
+    border:3px solid black;
 }
 
-/* HOVER */
 .snap-btn:hover {
     transform:scale(1.1);
-    box-shadow:0 0 40px #FFFC00;
-}
-
-/* ANIMATION */
-.snap-btn {
-    animation:pulse 1.5s infinite;
-}
-
-@keyframes pulse {
-    0% { box-shadow:0 0 10px #FFFC00; }
-    50% { box-shadow:0 0 40px #FFFC00; }
-    100% { box-shadow:0 0 10px #FFFC00; }
+    box-shadow:0 0 50px white;
 }
 </style>
 </head>
 
 <body>
 
-<!-- 🎵 MUSIQUE -->
-<audio autoplay loop>
-    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
-</audio>
+<div class="bubble" style="width:120px;height:120px;left:15%;bottom:-120px;"></div>
+<div class="bubble" style="width:180px;height:180px;left:65%;bottom:-180px;"></div>
+<div class="bubble" style="width:90px;height:90px;left:45%;bottom:-90px;"></div>
 
-<a href="https://snapchat.com/add/rida31100" target="_blank">
+<a href="https://snapchat.com/add/tonpseudo" target="_blank">
     <button class="snap-btn">👻 AJOUTE MOI SUR SNAP</button>
 </a>
 
